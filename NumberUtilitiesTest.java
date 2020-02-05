@@ -46,7 +46,7 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-    @Test
+    @Test 
     public void testGetRangeStartAt100() {
         // : Given
         String expected = "100101102103104105106107108109";
