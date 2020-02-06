@@ -56,9 +56,7 @@ public class NumberUtilities {
         for (int i = start; i <= stop; i++){
                result *= Math.pow(i,exponent);
                myString += result;
-               result = 1;
-               // myString += Math.pow(i,exponent); MArk
-               
+               result = 1;      
         }
         return myString;
     }

@@ -12,7 +12,6 @@ public class TriangleUtilities {
     }
     
     public static String getTriangle(int numberOfRows) {
-        String myTriangle = "";
         String myRow = "";
         String mySymbol = "*";
         String myBreak = "\n";
@@ -21,7 +20,6 @@ public class TriangleUtilities {
                 myRow += mySymbol;
             }
             myRow += myBreak;
-            myTriangle += myRow;
         }
        return myRow;
     }
