@@ -12,6 +12,7 @@ public class TriangleUtilities {
     }
     
     public static String getTriangle(int numberOfRows) {
+        String myTriangle = "";
         String myRow = "";
         String mySymbol = "*";
         String myBreak = "\n";
@@ -20,34 +21,17 @@ public class TriangleUtilities {
                 myRow += mySymbol;
             }
             myRow += myBreak;
+            myTriangle += myRow;
         }
        return myRow;
     }
 
 
     public static String getSmallTriangle() {
-        String myRow = "";
-        String mySymbol = "*";
-        String myBreak = "\n";
-        for (int i = 1; i <= 4; i++){
-            for (int j = 0; j < i; j++){
-                myRow += mySymbol;
-            }
-            myRow += myBreak;
-        }
-       return myRow;
+        return getTriangle(4);
     }
 
     public static String getLargeTriangle() {
-        String myRow = "";
-        String mySymbol = "*";
-        String myBreak = "\n";
-        for (int i = 1; i <= 9; i++){
-            for (int j = 0; j < i; j++){
-                myRow += mySymbol;
-            }
-            myRow += myBreak;
-        }
-       return myRow;
+        return getTriangle(9);
     }
 }
